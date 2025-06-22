@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 load_dotenv() 
 
-EMAIL_USER="ganiyufadi@gmail.com"
-EMAIL_PASS="fnirixblextjgzku"
 
+EMAIL_USER = os.getenv("EMAIL_USER")
+EMAIL_PASS = os.getenv("EMAIL_PASS")
 
 @app.route("/")
 def home():
